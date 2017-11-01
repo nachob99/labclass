@@ -23,6 +23,14 @@ public class Student
         name = fullName;
         id = studentID;
         credits = 0;
+        if(name.length()<4)
+        {
+            System.out.println("Longitud incorrecta");
+        }
+        if(id.length()<3)
+        {
+            System.out.println("Longitud incorrecta");
+        }
     }
 
     /**
@@ -74,7 +82,7 @@ public class Student
     {
         return name.substring(0,4) + id.substring(0,3);
     }
-    
+
     /**
      * Print the student's name and ID number to the output terminal.
      */
